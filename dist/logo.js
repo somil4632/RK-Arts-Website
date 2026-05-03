@@ -3,21 +3,35 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHeight,0.1,1000);
 
 const renderer = new THREE.WebGLRenderer({
-    canvas: document.querySelector('#logo')
+    canvas: document.querySelector('#logo'),
+    alpha :true
 });
 renderer.setSize(window.innerWidth,window.innerHeight);
 
 renderer.render(scene,camera);
 
-const geo = new THREE.BoxGeometry(2,1,0.1);
-const mat = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+const geo = new THREE.BoxGeometry(0.1,1.3,3);
+const texture = new THREE.TextureLoader().load('/assets/3d logo.png');
+const mat = new THREE.MeshBasicMaterial({ map: texture });
 const cube = new THREE.Mesh(geo,mat);
+cube.position.x =3;
+cube.position.y = 0.5;
+cube.position.z = -0.5;
 
 scene.add( cube );
+const point_geo = new THREE.TorusGeometry(50,10,15,200);
+const point_tex = new THREE.PointsMaterial({color:'white', size:0.4});
+const point = new THREE.Points(point_geo,point_tex);
+scene.add(point);
+point.position.x =3;
+
 camera.position.z = 5;
 function animate(){
     requestAnimationFrame(animate);
-    cube.rotation.y += 0.01;
+    cube.rotation.y += 0.015;
+    point.rotation.y += 0.02;
+    point.rotation.x += 0.02;
+
     renderer.render(scene,camera);
 }
-animate();
+animate()
