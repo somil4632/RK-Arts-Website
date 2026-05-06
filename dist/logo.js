@@ -1,14 +1,17 @@
 import * as THREE from 'https://unpkg.com/three@0.165.0/build/three.module.js';
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHeight,0.1,1000);
+const header = document.querySelector('header')
+const camera = new THREE.PerspectiveCamera(75,header.clientWidth / header.clientHeight,0.1,1000);
 
 const renderer = new THREE.WebGLRenderer({
     canvas: document.querySelector('#logo'),
     alpha :true
 });
-renderer.setSize(window.innerWidth,window.innerHeight);
 
-renderer.render(scene,camera);
+renderer.setSize(header.clientWidth, header.clientHeight);
+renderer.setPixelRatio(window.devicePixelRatio);
+
+
 
 const geo = new THREE.BoxGeometry(0.1,1.3,3);
 const texture = new THREE.TextureLoader().load('/assets/3d logo.png');
@@ -16,7 +19,7 @@ const mat = new THREE.MeshBasicMaterial({ map: texture });
 const cube = new THREE.Mesh(geo,mat);
 cube.position.x =3;
 cube.position.y = 0.5;
-cube.position.z = -0.5;
+cube.position.z = 1;
 
 scene.add( cube );
 const point_geo = new THREE.TorusGeometry(50,10,15,200);
