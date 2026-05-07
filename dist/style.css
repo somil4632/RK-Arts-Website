@@ -558,9 +558,9 @@ video {
   position: relative;
 }
 
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .mx-\[20px\] {
@@ -571,11 +571,6 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
 }
 
 .mb-12 {
@@ -622,6 +617,10 @@ video {
   height: 20vh;
 }
 
+.h-\[72vh\] {
+  height: 72vh;
+}
+
 .h-auto {
   height: auto;
 }
@@ -638,28 +637,8 @@ video {
   height: 50vh;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
-}
-
-.h-\[80vh\] {
-  height: 80vh;
-}
-
 .h-\[60vh\] {
   height: 60vh;
-}
-
-.h-\[65vh\] {
-  height: 65vh;
-}
-
-.h-\[75vh\] {
-  height: 75vh;
-}
-
-.h-\[72vh\] {
-  height: 72vh;
 }
 
 .w-36 {
@@ -678,6 +657,10 @@ video {
   width: 20rem;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .w-full {
   width: 100%;
 }
@@ -688,6 +671,10 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 @keyframes scroll {
@@ -753,11 +740,6 @@ video {
   border-color: rgb(245 245 245 / var(--tw-border-opacity));
 }
 
-.bg-neutral-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
-}
-
 .bg-neutral-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(115 115 115 / var(--tw-bg-opacity));
@@ -779,6 +761,10 @@ video {
 
 .p-10 {
   padding: 2.5rem;
+}
+
+.p-24 {
+  padding: 6rem;
 }
 
 .py-2 {
@@ -827,16 +813,6 @@ video {
   color: rgb(250 250 250 / var(--tw-text-opacity));
 }
 
-.text-cyan-50 {
-  --tw-text-opacity: 1;
-  color: rgb(236 254 255 / var(--tw-text-opacity));
-}
-
-.text-neutral-300 {
-  --tw-text-opacity: 1;
-  color: rgb(212 212 212 / var(--tw-text-opacity));
-}
-
 @media (min-width: 640px) {
   .sm\:block {
     display: block;
@@ -853,6 +829,11 @@ video {
     padding-right: 2rem;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -860,6 +841,11 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
