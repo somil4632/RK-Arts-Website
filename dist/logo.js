@@ -39,3 +39,158 @@ function animate(){
 }
 animate()
 
+document.addEventListener('DOMContentLoaded', () =>{
+    const openw = document.getElementById('openwd');
+    const closew = document.getElementById('closewd');
+    const popupwd = document.getElementById('wd');
+
+    openw.addEventListener('click',() =>{
+    popupwd.classList.remove('hidden');
+    })
+        closew.addEventListener('click', () =>{
+            popupwd.classList.add('hidden');
+        })
+
+})
+
+
+document.addEventListener('DOMContentLoaded', () =>{
+    const openl = document.getElementById('openlt');
+    const closel = document.getElementById('closelt');
+    const popuplt = document.getElementById('lt');
+
+    openl.addEventListener('click',() =>{
+    popuplt.classList.remove('hidden');
+    })
+        closel.addEventListener('click', () =>{
+            popuplt.classList.add('hidden');
+        })
+
+})
+
+document.addEventListener('DOMContentLoaded', () =>{
+    const openb = document.getElementById('openwb');
+    const closeb = document.getElementById('closewb');
+    const popupwb = document.getElementById('wb');
+
+    openb.addEventListener('click',() =>{
+    popupwb.classList.remove('hidden');
+    })
+        closeb.addEventListener('click', () =>{
+            popupwb.classList.add('hidden');
+        })
+
+})
+
+document.addEventListener('DOMContentLoaded', () =>{
+    const openv = document.getElementById('openvs');
+    const closev = document.getElementById('closevs');
+    const popupvs = document.getElementById('vs');
+
+    openv.addEventListener('click',() =>{
+    popupvs.classList.remove('hidden');
+    })
+        closev.addEventListener('click', () =>{
+            popupvs.classList.add('hidden');
+        })
+
+})
+
+document.addEventListener('DOMContentLoaded', () =>{
+    const openB = document.getElementById('openbb');
+    const closeB = document.getElementById('closebb');
+    const popupbb = document.getElementById('bb');
+
+    openB.addEventListener('click',() =>{
+    popupbb.classList.remove('hidden');
+    })
+        closeB.addEventListener('click', () =>{
+            popupbb.classList.add('hidden');
+        })
+
+})
+
+
+document.addEventListener('DOMContentLoaded', () =>{
+    const openp = document.getElementById('openpa');
+    const closep = document.getElementById('closepa');
+    const popuppa = document.getElementById('pa');
+
+    openp.addEventListener('click',() =>{
+    popuppa.classList.remove('hidden');
+    })
+        closep.addEventListener('click', () =>{
+            popuppa.classList.add('hidden');
+        })
+
+})
+
+document.addEventListener('DOMContentLoaded', () =>{
+    const openp = document.getElementById('openpa');
+    const closep = document.getElementById('closepa');
+    const popuppa = document.getElementById('pa');
+
+    openp.addEventListener('click',() =>{
+    popuppa.classList.remove('hidden');
+    })
+        closep.addEventListener('click', () =>{
+            popuppa.classList.add('hidden');
+        })
+
+})
+
+document.addEventListener('DOMContentLoaded', () =>{
+    const openE = document.getElementById('openEn');
+    const closeE = document.getElementById('closeEn');
+    const popupEn = document.getElementById('En');
+
+    openE.addEventListener('click',() =>{
+    popupEn.classList.remove('hidden');
+    })
+        closeE.addEventListener('click', () =>{
+            popupEn.classList.add('hidden');
+        })
+
+})
+
+document.addEventListener('DOMContentLoaded', () =>{
+    const openo = document.getElementById('openpo');
+    const closeo = document.getElementById('closepo');
+    const popuppo = document.getElementById('po');
+
+    openo.addEventListener('click',() =>{
+    popuppo.classList.remove('hidden');
+    })
+        closeo.addEventListener('click', () =>{
+            popuppo.classList.add('hidden');
+        })
+
+})
+
+document.addEventListener('DOMContentLoaded', () =>{
+    const openM = document.getElementById('openMe');
+    const closeM = document.getElementById('closeMe');
+    const popupMe = document.getElementById('Me');
+
+    openM.addEventListener('click',() =>{
+    popupMe.classList.remove('hidden');
+    })
+        closeM.addEventListener('click', () =>{
+            popupMe.classList.add('hidden');
+        })
+
+})
+
+document.addEventListener('DOMContentLoaded', () =>{
+    const openG = document.getElementById('openGi');
+    const closeG = document.getElementById('closeGi');
+    const popupGi = document.getElementById('Gi');
+
+    openG.addEventListener('click',() =>{
+    popupGi.classList.remove('hidden');
+    })
+        closeG.addEventListener('click', () =>{
+            popupGi.classList.add('hidden');
+        })
+
+})
