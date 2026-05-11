@@ -17,16 +17,16 @@ const geo = new THREE.BoxGeometry(0.1,1.3,3);
 const texture = new THREE.TextureLoader().load('/assets/3d logo.png');
 const mat = new THREE.MeshBasicMaterial({ map: texture });
 const cube = new THREE.Mesh(geo,mat);
-cube.position.x =3;
-cube.position.y = 0.5;
-cube.position.z = 1;
+cube.position.x =0;
+cube.position.y = 0;
+cube.position.z = 2;
 
 scene.add( cube );
-const point_geo = new THREE.TorusGeometry(50,10,15,200);
+const point_geo = new THREE.TorusGeometry(50,20,30,200);
 const point_tex = new THREE.PointsMaterial({color:'white', size:0.4});
 const point = new THREE.Points(point_geo,point_tex);
 scene.add(point);
-point.position.x =3;
+point.position.x =0;
 
 camera.position.z = 5;
 function animate(){
