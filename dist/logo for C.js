@@ -13,7 +13,7 @@ renderer.setPixelRatio(window.devicePixelRatio);
 
 
 const geo = new THREE.BoxGeometry(0.1,1.3,3);
-const texture = new THREE.TextureLoader().load('/assets/3d logo.png');
+const texture = new THREE.TextureLoader().load('../assets/3d logo.png');
 const mat = new THREE.MeshBasicMaterial({ map: texture });
 const cube = new THREE.Mesh(geo,mat);
 
