@@ -194,3 +194,165 @@ document.addEventListener('DOMContentLoaded', () =>{
         })
 
 })
+let slideIndex = 0;
+const slider = document.getElementById("slider");
+const pre = document.getElementById("pre");
+const next = document.getElementById("next");
+
+const totalSlides = slider.children.length;
+function updateSlider(){
+    slider.style.transform = `translateX(-${slideIndex * 100}%)` ; 
+}
+next.addEventListener("click" , () => {
+    slideIndex = (slideIndex + 1) % totalSlides;
+    updateSlider();
+})
+pre.addEventListener("click" , () => {
+    slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+    updateSlider();
+})  
+
+const slider2 = document.getElementById("slider2");
+const pre2 = document.getElementById("pre2");
+const next2 = document.getElementById("next2");
+const totalSlides2 = slider2.children.length;
+function updateSlider2(){
+    slider2.style.transform = `translateX(-${slideIndex * 100}%)` ; 
+}
+next2.addEventListener("click" , () => {
+    slideIndex = (slideIndex + 1) % totalSlides2;
+    updateSlider2();
+})
+pre2.addEventListener("click" , () => {
+    slideIndex = (slideIndex - 1 + totalSlides2) % totalSlides2;
+    updateSlider2();
+})  
+
+const slider3 = document.getElementById("slider3");
+const pre3 = document.getElementById("pre3");
+const next3 = document.getElementById("next3");
+const totalSlides3 = slider3.children.length;
+function updateSlider3(){
+    slider3.style.transform = `translateX(-${slideIndex * 100}%)` ; 
+}
+next3.addEventListener("click" , () => {
+    slideIndex = (slideIndex + 1) % totalSlides3;
+    updateSlider3();
+})
+pre3.addEventListener("click" , () => {
+    slideIndex = (slideIndex - 1 + totalSlides3) % totalSlides3;
+    updateSlider3();
+})  
+
+const slider4 = document.getElementById("slider4");
+const pre4 = document.getElementById("pre4");
+const next4 = document.getElementById("next4");
+const totalSlides4 = slider4.children.length;
+function updateSlider4(){
+    slider4.style.transform = `translateX(-${slideIndex * 100}%)` ; 
+}
+next4.addEventListener("click" , () => {
+    slideIndex = (slideIndex + 1) % totalSlides3;
+    updateSlider4();
+})
+pre4.addEventListener("click" , () => {
+    slideIndex = (slideIndex - 1 + totalSlides4) % totalSlides4;
+    updateSlider4();
+})  
+
+const slider5 = document.getElementById("slider5");
+const pre5 = document.getElementById("pre5");
+const next5 = document.getElementById("next5");
+const totalSlides5 = slider5.children.length;
+function updateSlider5(){
+    slider5.style.transform = `translateX(-${slideIndex * 100}%)` ; 
+}
+next5.addEventListener("click" , () => {
+    slideIndex = (slideIndex + 1) % totalSlides3;
+    updateSlider5();
+})
+pre5.addEventListener("click" , () => {
+    slideIndex = (slideIndex - 1 + totalSlides5) % totalSlides5;
+    updateSlider5();
+})  
+
+const slider6 = document.getElementById("slider6");
+const pre6 = document.getElementById("pre6");
+const next6 = document.getElementById("next6");
+const totalSlides6 = slider6.children.length;
+function updateSlider6(){
+    slider6.style.transform = `translateX(-${slideIndex * 100}%)` ; 
+}
+next6.addEventListener("click" , () => {
+    slideIndex = (slideIndex + 1) % totalSlides3;
+    updateSlider6();
+})
+pre6.addEventListener("click" , () => {
+    slideIndex = (slideIndex - 1 + totalSlides6) % totalSlides6;
+    updateSlider6();
+})
+
+const slider7 = document.getElementById("slider7");
+const pre7 = document.getElementById("pre7");
+const next7 = document.getElementById("next7");
+const totalSlides7 = slider7.children.length;
+function updateSlider7(){
+    slider7.style.transform = `translateX(-${slideIndex * 100}%)` ; 
+}
+next7.addEventListener("click" , () => {
+    slideIndex = (slideIndex + 1) % totalSlides3;
+    updateSlider7();
+})
+pre7.addEventListener("click" , () => {
+    slideIndex = (slideIndex - 1 + totalSlides7) % totalSlides7;
+    updateSlider7();
+}) 
+
+const slider8 = document.getElementById("slider8");
+const pre8 = document.getElementById("pre8");
+const next8 = document.getElementById("next8");
+const totalSlides8 = slider8.children.length;
+function updateSlider8(){
+    slider8.style.transform = `translateX(-${slideIndex * 100}%)` ; 
+}
+next8.addEventListener("click" , () => {
+    slideIndex = (slideIndex + 1) % totalSlides3;
+    updateSlider8();
+})
+pre8.addEventListener("click" , () => {
+    slideIndex = (slideIndex - 1 + totalSlides8) % totalSlides8;
+    updateSlider8();
+}) 
+
+
+const slider9 = document.getElementById("slider9");
+const pre9 = document.getElementById("pre9");
+const next9 = document.getElementById("next9");
+const totalSlides9 = slider9.children.length;
+function updateSlider9(){
+    slider9.style.transform = `translateX(-${slideIndex * 100}%)` ; 
+}
+next9.addEventListener("click" , () => {
+    slideIndex = (slideIndex + 1) % totalSlides3;
+    updateSlider9();
+})
+pre9.addEventListener("click" , () => {
+    slideIndex = (slideIndex - 1 + totalSlides9) % totalSlides9;
+    updateSlider9();
+})
+
+const slider10 = document.getElementById("slider10");
+const pre10 = document.getElementById("pre10");
+const next10 = document.getElementById("next10");
+const totalSlides10 = slider10.children.length;
+function updateSlider10(){
+    slider10.style.transform = `translateX(-${slideIndex * 100}%)` ; 
+}
+next10.addEventListener("click" , () => {
+    slideIndex = (slideIndex + 1) % totalSlides3;
+    updateSlider10();
+})
+pre10.addEventListener("click" , () => {
+    slideIndex = (slideIndex - 1 + totalSlides10) % totalSlides10;
+    updateSlider10();
+}) 
