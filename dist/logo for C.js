@@ -39,3 +39,28 @@ function animate(){
     renderer.render(scene,camera);
 }
 animate()
+
+function resizeLogo(){
+    const width = header.clientWidth;
+    const height = header.clientHeight;
+    renderer.setSize(width,height);
+    camera.aspect = width/height;
+    camera.updateProjectionMatrix();
+
+    if(window.innerwidth < 768)
+    {
+        cube.scale.set(0.7,0.7,0.7);
+        point.scale.set(0.4,0.4,0.4);
+        camera.position.z = 7;
+    }
+    
+    else if(window.innerwidth < 1024){
+        cube.scale.set(0.9,0.9,0.9);
+        point.scale.set(0.7,0.7,0.7);
+        camera.position.z = 6;
+    }
+
+   
+}
+window.addEventListener('resize',resizeLogo)
+resizeLogo();
