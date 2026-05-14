@@ -381,3 +381,15 @@ function resizeLogo(){
 }
 window.addEventListener('resize',resizeLogo)
 resizeLogo();
+
+
+document.addEventListener('DOMContentLoaded', () =>{
+    const open = document.getElementById('dot');
+    const item = document.getElementById('item');
+
+    open.addEventListener('click',() =>{
+    item.classList.toggle('hidden');
+    })
+   
+
+})
